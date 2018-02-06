@@ -1,7 +1,23 @@
 #####
-
+	
+	X. Overall usefull commands
+	
+	notepad.exe FILENAME		-	opens or creates a file at the current direction
+	start notepad++	FILENAME	-	using Notepad++
+	
+	dir
+	cd	
+	cd ..
+	
 	X. Git /w GitHub
 	
 	git clone URL
 	git push
 	git pull
+	
+	X. Working with Patches
+	
+	git add -p
+	git commit
+	git format-patch HEAD~1
+	(git stash)
