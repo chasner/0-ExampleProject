@@ -1,2 +1,7 @@
 #####
 
+	X. Git /w GitHub
+	
+	git clone URL
+	git push
+	git pull
