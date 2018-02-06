@@ -21,3 +21,81 @@
 	git commit
 	git format-patch HEAD~1
 	(git stash)
+
+	
+	This File contains Commands for Git Bash
+
+1. Directing Through Folders
+
+	pwd 	-	where you are current
+	dir		-	current files in the current path
+	cd 		-	moving forwards
+	cd ..	-	moving backward
+	
+2. Git Commands
+
+	git init		-	Current Folder will be made as a repo
+	git add %file 	- 	Adding file into the repo
+	git commit		-	committing changes
+	-m ""			-	comment
+	git log			-	commit log
+	
+	$ git config --global user.name "John Doe"			-	changing name globally
+	$ git config --global user.email "john@doe.org"		-	changing mail globally
+	
+	git add --all 	-	All Files will be prepared with changes for the next commit
+	git diff FILE	-	Differences between last commit and current file in workspace
+	git status		-	All changes since last commit
+	
+	
+3. Resets / What to do if I broke it?
+
+	git reset --hard HEAD	-	Resets Workspace to the last Commit	// Head means on aktuellen Stand
+	
+4. Shortcuts
+
+	q	-	when git log is to long you can exit
+	h 	-	help
+
+5. Checkout and Branches
+
+	git checkout HASHCODE 			-	Jump into a commit
+	git checkout BRANCHNAME			-	Get into a Branch
+	git checkout -b "BRANCHNAME"	-	Creating a new Branch
+	git log --all					-	Displays all commits from all Branches
+	git log --all --graph			-	Displays all commits from all Branches with Graph
+	git log --all --graph --oneline	-	Cleaner View
+	
+6. Git rm and status
+		
+	git rm FILE	-	Deletes File for upcoming commit and out of workspace
+	
+7. Merging Branches
+
+	git merge BRANCHNAME	-	merges Branch into current selected Branch (Fast forward merge, if nothing happend before)
+	git merge BRANCHNAME dann :q dann beendet ohne comment (aber merge comment sollte gemacht werden)
+
+8. Git Stash (In Work and you dont want to commit, but save inbetween; also works after restart)	
+
+	a.) git add FILE (you want to add to stash) or git add --all
+	b.) git stash (everything you made since last commit will be put into a stash and you are on your last commit
+	c.) do the work here then do the commit you need
+	d.) git stash pop (will reload your stashed work)
+	
+9. Using GitHub
+
+	git clone URL ORDNER	-	Creates GitHub Repo at Current Direction in the Named Folder
+	git push 				-	Pushing Commit to GitHub
+	git pull				-	Pulling everything from GitHub
+	
+10. Next? Git Ignore File	  
+
+11. Session /w Murray
+
+	--amend					-	Change commit message
+$ git config core.editor notepad
+
+
+
+	
+	
