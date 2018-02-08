@@ -14,6 +14,7 @@
 	git clone URL
 	git push
 	git pull
+	git --amend
 	
 	X. Working with Patches
 	
@@ -22,6 +23,13 @@
 	git format-patch HEAD~1
 	(git stash)
 
+	
+	X. Misc
+	
+	git format.pc
+	config core.editor notepad
+	
+	
 	
 	This File contains Commands for Git Bash
 
